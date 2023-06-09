@@ -33,10 +33,10 @@ public class Customer {
     }
     public String toString(){
         if (isCitizen()==true){
-            return name+"(citizen) registered in"+getYearOfOrigin();
+            return name+" (citizen) registered in"+getYearOfOrigin();
         }
         else{
-            return name+"registered in"+getYearOfOrigin();
+            return name+" registered in "+getYearOfOrigin();
         }
     }
 }
