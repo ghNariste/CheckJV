@@ -1,5 +1,5 @@
 package fact.it.examcustomercheck;
-
+import fact.it.model.Customer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
