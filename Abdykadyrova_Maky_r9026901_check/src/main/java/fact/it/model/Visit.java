@@ -51,7 +51,14 @@ public class Visit {
         }
     }
     public String toString(){
-        return customer.getName()+" registered in"+customer.getYearOfOrigin()+" has deposited" +getDepositeWeight()+" of waste: Cost = "+getCost()+" euro";
+        if (customer.isCitizen()==true){
+            return customer.getName()+" (citizen) registered in "+customer.getYearOfOrigin()+" has deposited " +getDepositeWeight()+"kg of waste: Cost = "+getCost()+" euro";
+
+        }
+        else{
+            return customer.getName()+" registered in "+customer.getYearOfOrigin()+" has deposited " +getDepositeWeight()+"kg of waste: Cost = "+getCost()+" euro";
+
+        }
     }
 
 }

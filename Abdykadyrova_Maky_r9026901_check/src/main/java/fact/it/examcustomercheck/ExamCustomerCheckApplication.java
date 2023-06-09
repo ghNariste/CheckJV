@@ -14,17 +14,21 @@ public class ExamCustomerCheckApplication {
         Customer customer = new Customer("John Doe");
         customer.setCitizen(true);
         customer.setYearOfOrigin(2014);
-        System.out.println(customer.toString());
         Visit myV = new Visit();
         myV.setCustomer(customer);
         myV.setEnterWeight(10);
         myV.setExitWeight(5);
-        System.out.println(myV.getMembershipAge());
-        System.out.println(myV.getDepositeWeight());
-        System.out.println(myV.getCost());
-        System.out.println(myV.toString());
 
-        System.out.println("Visit 1 Details: "+"\n"+customer.toString());
+        Customer customer2 = new Customer("Jane Smith");
+        customer2.setCitizen(false);
+        customer2.setYearOfOrigin(2015);
+        Visit myJ = new Visit();
+        myJ.setCustomer(customer2);
+        myJ.setEnterWeight(19);
+        myJ.setExitWeight(8);
+
+        System.out.println("Visit 1 Details: "+"\n"+myV.toString());
+        System.out.println("Visit 2 Details: "+"\n"+myJ.toString());
         System.exit(0);
 
     }
